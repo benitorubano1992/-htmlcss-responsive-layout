@@ -1,0 +1,290 @@
+/* reset */
+*{margin:0;
+padding:0;
+box-sizing:border-box;    
+}
+
+:root{
+    
+}
+
+
+
+html{
+    font-size: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+/* common */
+.container{
+    width:100%;
+    padding:0 1rem;
+
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+.flex{
+    display:flex;
+    
+}
+.vertical{
+    align-items: center;
+}
+
+.col{
+    border-radius: 20px;
+}
+.mb{
+    margin-bottom:1.5rem;
+}
+
+
+header{
+    height:80px;
+    background-color: #0084fd;
+    color:white;
+   
+}
+
+header .container{
+    justify-content:space-between;
+     
+}
+.hb-menu {
+    font-size:1.5rem;
+}
+
+.sidebar{
+    display:none;
+}
+.sidebar li{
+    margin-left: 1.5rem;
+}
+/* fine header */
+/* inizio main */
+
+/* section about */
+
+.wrapper .col{
+    height:300px;
+    background-color: #b5ddff;
+}
+ .container{
+    padding:2.5rem 1rem;
+}
+
+.col .card-text{
+    height:100px;/*debug*/
+    background-color: green;
+
+}
+.col .card-image{
+    height:150px;
+    background-color: red;
+}
+/* fine sezione about */
+
+/* inizio sezione strategic */
+
+
+
+#strategic .container{
+    background-color: #9593E6;
+}
+#strategic .col:first-child{
+    height:300px;
+    background-color: aqua;
+    border-radius:0px;
+
+}
+#strategic .developer{
+    height:300px;
+    background-color: white;
+    border:1px solid black;
+}
+/* fine sezione strategic */
+
+/* inizio sezione testimonials */
+
+#testimonials .intestazione, #testimonials .column{
+    height:300px;/*debug*/
+    border-radius:20px;
+}
+#testimonials .column{
+    background-color: #9593E6;
+}
+.column-image{
+    height:100px;
+    background-color: red;
+}
+.column-text{
+    height:200px;
+    background-color: blue;
+}
+/* inizio sezione quality*/
+
+#quality .container{
+    background-color: #9593E6;
+}
+
+#quality .card{
+    height:250px;
+    background-color:red;
+    border-radius:20px;
+}
+
+
+/* fine sezione quality*/
+
+/* sezione chi-siamo*/
+#chi-siamo .col-chi{
+    height:250px;
+    background-color: springgreen;
+    border-radius: 20px;
+}
+/* fine sezione chi siamo*/
+
+/* sezione landing */
+
+#landing .container {
+    background-color: #9593E6;
+}
+
+.content{
+    height:300px;
+    background-color: cyan;
+}
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (min-width:768px){
+    .wrapper{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }    
+
+    .wrapper .col{
+        width:calc(100% / 3 - 1.5rem);
+    
+    }
+    .wrapper .col:first-child{
+        width:calc(100% / 3 * 2 - .75rem);
+    }
+    /* section testiomonials */
+
+    .column{
+        display:flex;
+    }
+    .column.image{
+        width:40%;
+        
+    }
+    .column-text{
+        width:60%;
+    }
+    /* fine section testiomnials */
+    /* inizio sezione quality */
+    
+    #quality .row{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #quality .card{
+        width:calc(100% / 2 - .75rem);
+    }
+    /* fine sezione quality */
+
+    /* inizio sezione chi-siamo */
+    #chi-siamo .row{
+        display:flex;
+    }
+    #chi-siamo .col-chi.mb{
+        width:55%;
+    }
+    #chi-siamo .col-chi:last-child{
+        width:45%;
+        background-color: orange;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:992px){
+    /* layout */
+    .container{
+        width:80%;
+        max-width:1000px;
+        margin:0 auto;
+        border:1px solid black;
+}
+    /* header */
+    .hb-menu{
+        display:none;
+    }
+    .sidebar{
+        display:block;
+    }
+
+    /* sezione about main */
+    .card{
+        display:flex;
+        
+    }
+    .card-text{
+        width:60%;
+    
+    }
+    .card-image{
+        width:40%;
+    }
+/* fine sezione about main */
+
+/* inizio sezione strategic */
+
+#strategic .container{
+    width:70%;
+    margin:0 auto;
+    
+}
+
+#strategic .row{
+    display:flex;
+}
+#strategic .col:first-child{
+    width:55%;
+
+}
+#strategic .developer{
+    width:45%;
+}
+/* fine sezione strategic developer */
+
+/* sezione quality */
+
+#quality .card{
+    width:calc(100% / 3 - .75rem);
+}
+
+
+
+
+
+}
