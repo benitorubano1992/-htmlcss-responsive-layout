@@ -31,6 +31,10 @@ a{
     text-decoration: none;
     color:inherit;
 }
+
+p{
+    line-height: 1.7;
+}
 .flex{
     display:flex;
     
@@ -45,6 +49,24 @@ a{
 .mb{
     margin-bottom:1.5rem;
 }
+
+.color{
+    color:#0084fd;
+}
+.color-p{
+    color:#9593E6;
+}
+.btn{
+    padding:0.5rem 4rem;
+    border-radius:20px;
+}
+
+
+main img{
+    max-width:100%;
+}
+
+
 
 
 header{
@@ -74,21 +96,64 @@ header .container{
 /* section about */
 
 .wrapper .col{
-    height:300px;
+    min-height:300px;
     background-color: #b5ddff;
 }
  .container{
-    padding:2.5rem 1rem;
+    padding:2.5rem 2rem;
 }
 
 .col .card-text{
-    height:100px;/*debug*/
-    background-color: green;
+    min-height:100px;/*debug*/
+    /*background-color: green;*/
+    padding:2rem 1rem;
+}
+
+.col .card-text .btn{
+    background-color: #0084fd;
+    color:white;
+}
+.card-image img{
+    width:50%;
+    display:block;
+}
+.card-image {
+    display:flex;
+    justify-content: center;
+}
+
+
+
+
+.wrapper .col{
+    
+    padding:2rem 2rem;
+}
+
+.wrapper .col.first{
+    padding:1rem 2rem 0;
+}
+
+
+.wrapper .col:not( .first){
+    text-align: center;
+}
+
+.wrapper .icon{
+    font-size:5rem;
 
 }
+
+.wrapper .col:not( .first) h3{
+   
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+
 .col .card-image{
-    height:150px;
-    background-color: red;
+    /*height:150px;*/
+    /*background-color: red;*/
 }
 /* fine sezione about */
 
@@ -100,34 +165,123 @@ header .container{
     background-color: #9593E6;
 }
 #strategic .col:first-child{
-    height:300px;
-    background-color: aqua;
+    min-height:300px;
+    /*background-color: aqua;*/
     border-radius:0px;
-
+    color:white;
 }
+#strategic .col:first-child h3{
+    font-size:2rem;
+    margin-bottom:1em;
+}
+
+
+
 #strategic .developer{
-    height:300px;
+    min-height:300px;
     background-color: white;
     border:1px solid black;
+    text-align:center;
 }
+
+#strategic .developer h3{
+    font-size:1.75rem;
+    font-weight:bolder;
+}
+
+#strategic .developer p {
+    font-style:oblique;
+    font-size:1.4rem;
+    padding: 0 1.5rem;
+}
+
+
+
+#strategic .developer a {
+    font-size: 1.5rem;
+    display:inline-block;
+    width:2rem;
+    height:2rem;
+    border-radius:50%;
+    background-color: #9593E6;
+
+}
+
+
+
 /* fine sezione strategic */
 
 /* inizio sezione testimonials */
 
-#testimonials .intestazione, #testimonials .column{
-    height:300px;/*debug*/
-    border-radius:20px;
+
+
+#testimonials .intestazione{
+    text-align: center;
 }
+#testimonials .intestazione h3{
+    text-transform: uppercase;
+    font-weight: 100;
+}
+ .intestazione .main-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#testimonials .column{
+    padding:0 2rem;
+}
+#testimonials .column-image{
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+} 
+
+#testimonials .column-image img{
+    border-radius:50%;
+}
+
+#testimonials .column-text {
+    color:white;
+    padding:.75rem;
+    text-align:center;
+    font-size:1.2rem
+}
+#testimonials .column-text p:nth-of-type(2){
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+
+#testimonials .intestazione p:last-child{
+    font-size:1.2rem;
+    padding:0 2rem
+}
+
+
+
+#testimonials .intestazione, #testimonials .column{
+    min-height:300px;/*debug*/
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+
 #testimonials .column{
     background-color: #9593E6;
 }
 .column-image{
-    height:100px;
-    background-color: red;
+    min-height:100px;
+    /*background-color: red; debug*/
 }
 .column-text{
-    height:200px;
-    background-color: blue;
+    min-height:200px;
+    /*background-color: blue;*/
 }
 /* inizio sezione quality*/
 
@@ -135,21 +289,64 @@ header .container{
     background-color: #9593E6;
 }
 
-#quality .card{
-    height:250px;
-    background-color:red;
-    border-radius:20px;
+#quality h2{
+    color:white;
+    text-align: center;
+    font-size:2.5rem;
 }
 
+
+#quality .card{
+    min-height:250px;
+    /*background-color:red;*/
+    border-radius:20px;
+    padding:2.5rem;
+    background-color: white;
+}
+#quality .card h3 {
+    font-size:2.5rem;
+}
+#quality .card p:nth-of-type(1){
+    font-size:1.5rem;
+    font-weight:bold;
+}
+#quality .card a{
+    background-color: #9593E6;
+    color:white;
+    font-weight:bold;
+}
 
 /* fine sezione quality*/
 
 /* sezione chi-siamo*/
 #chi-siamo .col-chi{
-    height:250px;
-    background-color: springgreen;
+    min-height:250px;
+    /*background-color: springgreen;*/
     border-radius: 20px;
+
 }
+
+#chi-siamo .col-chi h2, .col-chi-text p:nth-of-type(1){
+    font-size:2.5rem;
+}
+
+.col-chi-image{
+    width:50%;
+}
+
+.col-chi-text p{
+    font-weight:bold;
+}
+
+#chi-siamo .col-chi img{
+    border-radius:50%;
+}
+
+#chi-siamo .col-chi a {
+    background-color: #9593E6;
+    color:white;
+}
+
 /* fine sezione chi siamo*/
 
 /* sezione landing */
@@ -159,11 +356,64 @@ header .container{
 }
 
 .content{
-    height:300px;
-    background-color: cyan;
+    min-height:300px;
+    /*background-color: cyan;*/
+    text-align:center;
+    padding:0 3.2rem 1.5rem;
+}
+.content h2{
+    font-weight:100;
+    text-transform: uppercase;
+    font-size:1rem;
+    color:#b8b6eb;
+}
+.content p:nth-of-type(1){
+    font-size:2rem;
+    font-weight: bold;
+    color:white;
+}
+.content p:nth-of-type(2) {
+    font-size:3.5rem;
+    color:#fdc15f;
+    font-weight: bolder;
 }
 
+.content p:nth-of-type(4){
+    color:white;
+    font-size:0.9rem;
+    margin-top:1.5rem;
+}
 
+.content p:nth-of-type(4) a{
+    text-decoration: underline;
+}
+
+.content .btn{
+   background-color: white;
+    color: #9593E6;
+
+}
+
+footer{
+    background-color: #333 ;
+}
+
+footer .contenuto {
+    text-align:center;
+    color:white;
+}
+ 
+footer .contenuto p:nth-of-type(1){
+    margin-bottom:3rem;
+}
+footer .contenuto p:nth-of-type(2){
+    padding:0 1rem 0 2rem;
+    color:white;
+}
+footer .contenuto a { 
+    color: #9593E6;
+    text-decoration: underline;
+}
 
 
 
