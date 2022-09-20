@@ -56,6 +56,11 @@ p{
 .color-p{
     color:#9593E6;
 }
+
+.white{
+    color:white;
+}
+
 .btn{
     padding:0.5rem 4rem;
     border-radius:20px;
@@ -228,13 +233,33 @@ header .container{
 }
 
 #testimonials .column{
-    padding:0 2rem;
+    padding:1.5rem 2rem 0;
 }
+
+
+
 #testimonials .column-image{
     border-radius:50%;
-    display:flex;
-    justify-content:center;
+   
+    width:60%;
+    margin:0 auto;
+    height:44vw;
+   
+    background-size: cover;
+    background-position: center;
 } 
+
+.column-image.first{
+    background-image: url(../img/testimonial1.jpg);
+
+}
+.column-image.second{
+    background-image: url(../img/testimonial2.jpg);
+}
+
+.column-image.third {
+    background-image: url(../img/testimonial3.jpg);
+}
 
 #testimonials .column-image img{
     border-radius:50%;
@@ -345,6 +370,7 @@ header .container{
 #chi-siamo .col-chi a {
     background-color: #9593E6;
     color:white;
+    padding:0.5rem 1rem;
 }
 
 /* fine sezione chi siamo*/
@@ -422,6 +448,8 @@ footer .contenuto a {
 
 /* media queries */
 @media screen and (min-width:768px){
+    
+    /* section about*/
     .wrapper{
         display:flex;
         flex-wrap: wrap;
@@ -435,6 +463,19 @@ footer .contenuto a {
     .wrapper .col:first-child{
         width:calc(100% / 3 * 2 - .75rem);
     }
+     .card-image{
+        display:blocK;
+        width:70%;
+    }
+    .card-image img {
+        max-width:100%;
+        display:block;
+        width:100%;
+    }
+    
+    
+    
+    
     /* section testiomonials */
 
     .column{
@@ -463,15 +504,28 @@ footer .contenuto a {
     /* inizio sezione chi-siamo */
     #chi-siamo .row{
         display:flex;
+        justify-content: space-between;
     }
     #chi-siamo .col-chi.mb{
         width:55%;
     }
     #chi-siamo .col-chi:last-child{
-        width:45%;
-        background-color: orange;
+        width:40%;
+        /*background-color: orange;*/
+        padding-top:2rem;
+    }
+    #chi-siamo .col-chi:last-child p{
+        font-size:1.5rem;
     }
 
+    .content{
+        width:72%;
+        margin:0 auto;
+    }
+    .contenuto{
+        width:65%;
+        margin:0 auto;
+    }
 
 }
 
