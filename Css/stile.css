@@ -476,6 +476,10 @@ footer .contenuto a {
         width:calc(100% / 3 - 1.5rem);
     
     }
+    .wrapper .col.mb {
+        margin-bottom:2.25rem;
+    }
+    
     .wrapper .col:first-child{
         width:calc(100% / 3 * 2 - .75rem);
     }
